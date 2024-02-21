@@ -31,6 +31,13 @@ pip install biopython
 pip install click
 ```
 
+5. We
+
+We have calculated the features and prediction results of wild-type protein and some mutated proteins, which can be downloaded from the [Zenodo](https://zenodo.org/doi/10.5281/zenodo.10686156) website.
+
+* Place the downloaded and decompressed contents of the `wt_data.zip` in the `wt_data` folder.
+* Place the downloaded and decompressed contents of the `mut_data.zip` in the `mut_data` folder.
+
 ## Usage
 
 ```bash
