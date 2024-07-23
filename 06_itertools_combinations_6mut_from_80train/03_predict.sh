@@ -16,7 +16,7 @@ conda activate evoai
 # run
 #######################################################################
 
-for name in `ls ../mut_data`; do
+for name in $(ls ../mut_data); do
     bash ../predict.sh -o ../mut_data/${name}
 done
 

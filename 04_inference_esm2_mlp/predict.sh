@@ -16,7 +16,7 @@ conda activate evoai
 # run
 #######################################################################
 
-for name in `ls ../mut_data`; do
+for name in $(ls ../mut_data); do
     echo ${name}
     python predict.py --ensemble_feature ../mut_data/${name}/ensemble.pt --saved_folder ../mut_data/${name}
 done
