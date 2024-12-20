@@ -3,7 +3,6 @@
 
 ## Prerequisites
 
-* [AlphaFold](https://github.com/deepmind/alphafold)
 * [FoldX](https://foldxsuite.crg.eu)
 * [Anaconda](https://www.anaconda.com)
 
@@ -41,6 +40,15 @@ pip install click
 ```bash
 bash predict.sh -o ./mut_data/D32E,S56R,M112L,I123K,R124W,T181S
 ```
+
+## Tips
+
+This study involves model predictions carried out in two parts: one using **DMS information** and the other using **EvoScan anchors**. These correspond to the two boxplots on the left and right in **Figure 5C**, respectively. The DMS information part relies on the zero-shot predictions from the GeoFitness model.
+
+As a result, there are two folders in the source code corresponding to the respective predictions.
+
+The [folder](04_itertools_combinations_6mut_from_geofitness) contains the code and results related to predictions based on DMS information.
+The [folder](05_itertools_combinations_6mut_from_82train) corresponds to the predictions using EvoScan anchors.
 
 ## Reference
 
